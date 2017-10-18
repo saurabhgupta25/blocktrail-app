@@ -38,7 +38,7 @@ export class AppComponent {
     document.getElementById('loader').style.display = 'block';
     this.addressDetails = new AddressDetails();
     this.error = '';
-    this._http.get('http://blocktrail-api.azurewebsites.net/getAddressInfo/' + this.address).map((res: Response) => res.json())
+    this._http.get('https://blocktrail-api.azurewebsites.net/getAddressInfo/' + this.address).map((res: Response) => res.json())
     .subscribe(data => {
            console.log(data);
            document.getElementById('loader').style.display = 'none';
@@ -84,7 +84,7 @@ export class AppComponent {
     }
     this.moneyerror = '';
     document.getElementById('loader1').style.display = 'block';
-    this._http.get('http://blocktrail-api.azurewebsites.net/sendMoney/' + this.addressToSend + '/0.001').map((res: Response) => res.json())
+    this._http.get('https://blocktrail-api.azurewebsites.net/sendMoney/' + this.addressToSend + '/0.001').map((res: Response) => res.json())
     .subscribe(data => {
            console.log(data);
            document.getElementById('loader1').style.display = 'none';
