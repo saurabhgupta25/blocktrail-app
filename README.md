@@ -1,6 +1,6 @@
 # BlocktrailAppProd
 
-Description - Blocktrail Testnet explorer
+Description - Blocktrail Testnet explorer to send and view bitcoins
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.7.
 
